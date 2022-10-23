@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(2, 107, 2, 0.726);
+}
+.productContainer {
+    width: 1024px;
+    height: 250px;
+margin: auto;
+margin-bottom: 10px;
+background-color: rgba(95, 253, 253, 0.904);
+display: flex;
+border-radius: 5px;
+}
+.productContainer img{
+    width: 290px;
+    height: 250px;
+}
+.productContent{
+    flex: 1;
+    height: 250px;
+    padding: 0px 15px;
+    overflow-y: auto;
+}
+.productCost{
+    width: 160px;
+    height: 250px;
+    text-align: center;
+}

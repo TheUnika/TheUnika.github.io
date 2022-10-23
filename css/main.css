@@ -1,0 +1,99 @@
+.post {
+    width: 50%;
+    background-color: rgb(251, 245, 153);
+    margin: auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.post h2 {
+    padding: 60px;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+
+}
+
+header {
+    background-color: rgba(153, 255, 175, 0.719);
+    position: sticky;
+    top: 0;
+    margin-bottom: 5px;
+}
+
+header ul {
+    list-style: none;
+    margin: 0 0 0 35px;
+}
+header li{
+    float: left;
+
+}
+
+td img {
+    width: 130px;
+    border-radius: 100px;
+}
+
+body {
+    margin: 0;
+}
+
+.footer {
+    background-color: rgb(149, 213, 255);
+    width: 100%;
+}
+
+.footer div {
+    display: flex;
+}
+
+.info{
+    display: table;
+    align-items: center;    
+    padding: 10px;
+}
+.info img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.link{
+    display: table;
+    align-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.link p {
+    margin: 24px 0;
+}
+.button:hover{
+    background-color: rgba(105, 153, 255, 0.575);
+    cursor: pointer;
+
+}
+.disadled{
+    font-weight: bold;
+    background-color: rgba(105, 153, 255, 0.575);
+    pointer-events: none;
+}
+@media(max-width:480px){
+    .headerImg{
+        content: url(../images/obezjana.jpeg);
+    }
+    header ul{
+        margin: 0;
+        padding: 0;
+        font-size: medium;
+
+    }
+.post{
+    width: 100%;
+    border-radius: 0;
+}
+}
