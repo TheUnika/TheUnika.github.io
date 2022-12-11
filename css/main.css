@@ -1,9 +1,37 @@
+
+.themebutton{
+    float: right;
+    margin: 30px 15px 0px 0px;
+    
+    
+    display: flex;
+}
+.themebutton img{
+    margin-top: 7px;
+}
+body.dark-theme{
+    background-color: black;
+}
+.dark-theme .post{
+    background-color: black;
+    color: wheat;
+}
+.dark-theme button img{
+    content: url(../images/sun.png);
+}
+.dark-theme #panda{
+    content: url(../images/Panda.jpg);
+}
+
+
+
 .post {
     width: 50%;
     background-color: rgb(251, 245, 153);
     margin: auto;
     border-radius: 50px;
     overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .post h2 {
@@ -20,6 +48,7 @@
 .post p{
     font-size:180%;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     
 }
 
@@ -46,6 +75,7 @@ td img {
 
 body {
     margin: 0;
+    background-color: white;
 }
 
 .footer {
@@ -80,7 +110,7 @@ body {
     margin: 24px 0;
 }
 .button:hover{
-    background-color: rgba(105, 153, 255, 0.575);
+    background-color: rgba(105, 158, 255, 0.575);
     cursor: pointer;
 
 }
@@ -96,7 +126,7 @@ body {
     header ul{
         margin: 0;
         padding: 0;
-        font-size: medium;
+        font-size: small;
 
     }
 .post{
@@ -104,3 +134,87 @@ body {
     border-radius: 0;
 }
 }
+.like{
+    float: right;
+    font-size: 34px;
+    user-select: none;
+    display: flex;
+    margin-right: 5%;
+
+}
+.plus{
+    margin-right: 3px;
+    color: green;
+    cursor: pointer;
+}
+.minus{
+    margin-left: 3px;
+    color: red;
+    cursor: pointer;
+}
+.one img{
+    width: 20px;
+    height: 20px;
+}
+.comment-feed h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.comment-list {
+    margin: 0 0 12 0;
+    padding: 0;
+    list-style: none;
+}
+.user-comment {
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    font-weight:bold;
+    border-right: 1px solid;
+}
+.comment-form {
+    display:flex;
+    margin-bottom: 30px;
+    padding: 20px 12px;
+}
+.comment-inner {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 10px;
+}
+.comment-feld {
+    width: 97%;
+    height: 30px;
+    padding: 0 10px;
+    border:solid;
+    background-color: rgb(94, 255, 61);
+    font:inherit;
+    font-size: 14px;
+    color:rgb(0, 0, 0)
+}   
+.comment-feld::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-style: italic;    
+}
+.comment-form .button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(199, 251, 147);
+}
+.themebutton{
+    background-color: rgba(249, 255, 191, 0.972);
+}
+
+.user-comment1{
+    padding: 10px 12px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    font-weight:bold;
+    border-right: 1px solid;
+    background-color: rgb(125, 255, 151);
+}
+

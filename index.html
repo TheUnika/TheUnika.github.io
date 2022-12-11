@@ -11,7 +11,8 @@
 </head>
 
 <body>
-   <img class="headerImg" width="100%" src="http://ic.pics.livejournal.com/davydov_index/60378694/1830248/1830248_original.jpg">
+   <img class="headerImg" width="100%"
+      src="http://ic.pics.livejournal.com/davydov_index/60378694/1830248/1830248_original.jpg">
    <header>
       <ul>
          <li>
@@ -30,28 +31,37 @@
          </li>
          <li class="button disadled">
             <table>
-               <tr> 
-                  <td style="padding-top: 30px ;">               
-                    <a> <p>БЛОГ</p> </a>
-                  </td>
-               </tr>
-
-
-            </table>
-         </li> 
-         <li class="button">
-            <table>
-               <tr> 
-                  <td style="padding-top: 30px ;">               
-                    <a href="products.html"> <p> ТОВАРЫ </p></a>
+               <tr>
+                  <td style="padding-top: 30px ;">
+                     <a>
+                        <p>БЛОГ</p>
+                     </a>
                   </td>
                </tr>
 
 
             </table>
          </li>
-         <br style="clear:both ;">
+         <li class="button">
+            <table>
+               <tr>
+                  <td style="padding-top: 30px ;">
+                     <a href="products.html">
+                        <p> ТОВАРЫ </p>
+                     </a>
+                  </td>
+               </tr>
+
+
+            </table>
+         </li>
+
       </ul>
+      <button class="themebutton">
+         <img width="30px" src="images/moon.png">
+         <p> Сменить тему </p>
+      </button>
+      <br style="clear:both ;">
    </header>
    <div class="post">
       <h2>
@@ -59,13 +69,36 @@
       </h2>
       <p style="color:rgb(37, 171, 95)">
          Привет! Как настроение? Не хочешь ли посмотреть фотографии природы?:)</p>
-      <img width="250" height="330"
+      <img id="panda" width="250" height="330"
          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ailurus_fulgens_RoterPanda_LesserPanda.jpg/640px-Ailurus_fulgens_RoterPanda_LesserPanda.jpg">
-         <p style="color:deeppink;"> Взгляни на эти лилии!</p>
-      <iframe style="padding-bottom:15px ;" width="100%" height="500px" src="https://www.youtube.com/embed/hRfT0iIurcA" title="London water lily time lapse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-        
-   
-      <img width="500" height="300" src="https://i.ytimg.com/vi/bi_a00hrlHE/maxresdefault.jpg">
+      <p style="color:deeppink;"> Взгляни на эти лилии!</p>
+      <iframe style="padding-bottom:15px ;" width="100%" height="500px" src="https://www.youtube.com/embed/hRfT0iIurcA"
+         title="London water lily time lapse" frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+         allowfullscreen></iframe>
+
+
+     <img width="500" height="300" src="https://i.ytimg.com/vi/bi_a00hrlHE/maxresdefault.jpg">
+<div class="like">
+<span class="plus">+</span>                                                                    <!--   <img class="one" width="50px" src="https://miassdacha.ru/images/2018/04/05/finger_up.png"</span>-->
+<span class="counter">0</span>
+<span class="minus">-</span>
+</div>
+<div class="comment-feed">
+   <h2>Комментарий</h2>
+   <ol class="comment-list">
+       <li class="user-comment">Первый комментарий</li>
+
+      </ol>
+   <form method="post" class="comment-form">
+       <div class="comment-inner">
+           <input type="text" class="comment-feld" placeholder="Комментарий" required id="comment-input">
+       </div>
+       <button class="button" type="submit">Отправить</button>
+
+   </form>
+
+</div>
 
    </div>
 
@@ -74,8 +107,8 @@
          --- Время кроликов! ---
       </h2>
       <img width="350" height="430" src="https://klike.net/uploads/posts/2019-05/1558692302_2.jpeg">
-      <p style="color:navy">
-         Пара интересных фактов про кроликов:
+      <p style="color:rgb(3, 3, 111)">
+         Интересные факты про кроликов:
          <br>1. Длина кроличьих ушей может превышать десять сантиметров, а мировой рекорд составляет без малого
          восемьдесят сантиметров.
 
@@ -86,9 +119,14 @@
          <br>4. Кроличьи глаза устроены очень необычно — эти создания могут видеть, что творится позади них, даже не
          поворачивая головы.
       </p>
-      
+
 
       <img width="500" height="300" src="https://static.mk.ru/upload/iblock_mk/475/d9/bc/d5/DETAIL_PICTURE_548066.jpg">
+      <div class="like">
+         <span class="plus"> <img src="https://miassdacha.ru/images/2018/04/05/finger_up.png" </span>
+         <span class="counter">0</span>
+         <span class="minus">-</span>
+         </div>
    </div>
 
    <div class="footer">
@@ -102,30 +140,76 @@
          </div>
       </div>
 
-   <div>
-      <div class="info">
-         <img src="https://static.tildacdn.com/tild3665-3932-4664-a366-326633326337/telegram.png">
+      <div>
+         <div class="info">
+            <img src="https://static.tildacdn.com/tild3665-3932-4664-a366-326633326337/telegram.png">
 
-         <a target="_blank" href="https://web.telegram.org/z/">
-            <h2>Телеграмм</h2>
-         </a>
+            <a target="_blank" href="https://web.telegram.org/z/">
+               <h2>Телеграмм</h2>
+            </a>
+         </div>
+      </div>
+
+      <div>
+         <div class="info">
+            <img src="https://static10.tgstat.ru/channels/_0/2f/2f5a6b6c6296b1cfa5773ca9500ed2c8.jpg">
+
+            <a target="_blank" href="https://www.viber.com/ru/">
+               <h2>Вайбер</h2>
+            </a>
+         </div>
       </div>
    </div>
 
-   <div>
-      <div class="info">
-         <img src="https://static10.tgstat.ru/channels/_0/2f/2f5a6b6c6296b1cfa5773ca9500ed2c8.jpg">
-
-         <a target="_blank" href="https://www.viber.com/ru/">
-            <h2>Вайбер</h2>
-         </a>
-      </div>
-   </div> 
-</div>  
-
 </body>
 
+<script src="js/themes.js">
+   
 
+   /*
+   alert("Добро пожаловать! :)");
+   
+   let name = prompt("Как тебя зовут?");
+   alert( "Привет,"+name);
+   if (confirm("Хочешь решить уравнение?")){
+      let a=Number (prompt("Введите значение a"));
+   let b= Number (prompt("Введите значение b"));
+   let c=a+b;
+ alert("a+b="+c);
+   
+     c=a*b;
+     alert("a*b="+c);   
+    
+     c=a-b;
+     alert("a-b="+c);  
+
+     c=a/b;
+     alert("a/b="+c);  
+   }else{alert ("А мне пофиг :)")
+   let a=Number (prompt("Введите значение a"));
+   let b= Number (prompt("Введите значение b"));
+   let c=a+b;
+ alert("a+b="+c);
+   
+     c=a*b;
+     alert("a*b="+c);   
+    
+     c=a-b;
+     alert("a-b="+c);  
+
+     c=a/b;
+     alert("a/b="+c);  }
+    
+  
+   
+   document.body.style.background="green"
+   setTimeout(()=>document.body.style.background="",3000)
+      */
+
+
+</script>
+<script src="js/Likes.js"></script>
+<script src="js/comment.js" ></script>
 
 
 
