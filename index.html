@@ -8,18 +8,24 @@
    <link rel="stylesheet" type="text/css" href="css/main.css">
    <link rel="icon" type="x-icon" href="images/logo1.jpg">
    <meta name="viewport" content="width=device-width">
+   
 </head>
 
 <body>
-   <img class="headerImg" width="100%"
-      src="http://ic.pics.livejournal.com/davydov_index/60378694/1830248/1830248_original.jpg">
+   <img class="headerImg" width="100%" src="http://ic.pics.livejournal.com/davydov_index/60378694/1830248/1830248_original.jpg" onclick="playAudio('media/amogus.mp3')" >
+   
+   <audio controls autoplay = "autoplay">
+      <source src="media/звуки природы.mp3" tupe="audio/mpeg">
+      <source src="media/Релакс.mp3">
+   </audio>
+     
    <header>
       <ul>
          <li>
             <table>
                <tr>
                   <td>
-                     <img src="images/logo1.jpg">
+                     <img src="images/logo1.jpg" onclick="playAudio('media/звуки природы.mp3')">
                   </td>
                   <td>
                      <p> ПРИРОДА!</p>
@@ -61,8 +67,28 @@
          <img width="30px" src="images/moon.png">
          <p> Сменить тему </p>
       </button>
+      <button class="settings"> Настройка </button>
       <br style="clear:both ;">
    </header>
+   <div class="controls">
+   <label>
+      Цвет текста:
+      <select class="filter">
+         <option value="inherit" selected> По умолчанию</option>
+         <option value="white">Белый</option>
+         <option value="red">Красный</option>
+         <option value="green">Зелёный</option>
+         <option value="pink">Розовый</option>
+         <option value="blue">Голубой</option>
+         <option value="yellow">Жёлтый</option>
+         <option value="purple">Фиолетовый</option>
+      </select>
+   </label>
+   <label>
+      Размер текста:<output class="pixels">14</output>px
+      <input class="size-setting" type="range" min="8" max="70" step="1" value="14">
+   </label>
+</div>
    <div class="post">
       <h2>
          Спасибо что посетил мой сайт!
@@ -80,9 +106,9 @@
 
      <img width="500" height="300" src="https://i.ytimg.com/vi/bi_a00hrlHE/maxresdefault.jpg">
 <div class="like">
-<span class="plus"><img id="plusimg" src="https://miassdacha.ru/images/2018/04/05/finger_up.png"> </span>                                                                    <!--   <img class="one" width="50px" src="https://miassdacha.ru/images/2018/04/05/finger_up.png"</span>-->
+<span class="plus"><img id="plusimg" src="https://miassdacha.ru/images/2018/04/05/finger_up.png"  onclick="playAudio('media/да.mp3')"> </span>                                                                    <!--   <img class="one" width="50px" src="https://miassdacha.ru/images/2018/04/05/finger_up.png"</span>-->
 <span class="counter">0</span>
-<span class="minus"><img id="plusimg" src="images/Diza.png"></span>
+<span class="minus"><img id="plusimg" src="images/Diza.png"  onclick="playAudio('media/нет.mp3')"></span>
 </div>
 <div class="comment-feed">
    <h2>Комментарий</h2>
@@ -106,7 +132,7 @@
       <h2>
          --- Время кроликов! ---
       </h2>
-      <img width="350" height="430" src="https://klike.net/uploads/posts/2019-05/1558692302_2.jpeg">
+      <img width="350" height="430" src="https://klike.net/uploads/posts/2019-05/1558692302_2.jpeg"   onclick="playAudio('media/кролик.mp3')">
       <p style="color:rgb(3, 3, 111)">
          Интересные факты про кроликов:
          <br>1. Длина кроличьих ушей может превышать десять сантиметров, а мировой рекорд составляет без малого
@@ -123,9 +149,9 @@
 
       <img width="500" height="300" src="https://static.mk.ru/upload/iblock_mk/475/d9/bc/d5/DETAIL_PICTURE_548066.jpg">
       <div class="like">
-         <span class="plus"> <img id="plusimg" src="https://miassdacha.ru/images/2018/04/05/finger_up.png"> </span>
+         <span class="plus"> <img id="plusimg" src="https://miassdacha.ru/images/2018/04/05/finger_up.png" onclick="playAudio('media/да.mp3')"> </span>
          <span class="counter">0</span>
-         <span class="minus"><img id="plusimg" src="images/Diza.png"></span>
+         <span class="minus"><img id="plusimg" src="images/Diza.png" onclick="playAudio('media/нет.mp3')"></span>
          </div>
    </div>
 <button class="up-button">
@@ -172,7 +198,7 @@
 <script src="js/Likes.js"></script>
 <script src="js/comment.js" ></script>
 <script src="js/scrol.js"></script>
-
+<script src="js/read-mode.js"></script>
 
 
 
