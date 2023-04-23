@@ -2,12 +2,7 @@
 #plusimg{
     width: 30px;
 }
-.themebutton{
-    float: right;
-    margin: 30px 15px 0px 0px; 
-    
-    display: flex;
-}
+
 .themebutton img{
     margin-top: 7px;
 }
@@ -24,14 +19,18 @@ body.dark-theme{
 .dark-theme #panda{
     content: url(../images/pandaajpg.jpg);
 }
+.dark-theme #kroly{
+    content: url(../images/кроликизло.jpg);
+}
 
 
 
 .post {
-    width: 50%;
-    background-color: rgb(251, 245, 153);
-    margin: auto;
-    border-radius: 50px;
+    width: 70%;
+    background-color:wheat;
+    margin: auto; 
+   
+   
     overflow: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -77,12 +76,15 @@ td img {
 
 body {
     margin: 0;
-    background-color: white;
+    background-image: linear-gradient(rgba(255, 249, 238, 0.848), rgba(245, 222, 179, 0.876), rgba(255, 206, 116, 0.88));
 }
 
 .footer {
     background-color: rgb(149, 213, 255);
     width: 100%;
+    display: flex;
+    margin-top: 20px;
+    height: 150px;
 }
 
 .footer div {
@@ -206,7 +208,14 @@ body {
     background-color: rgb(199, 251, 147);
 }
 .themebutton{
-    background-color: rgba(249, 255, 191, 0.972);
+    background-color: transparent;
+    background-image: linear-gradient( rgb(255, 237, 134),rgba(112, 255, 255, 0.424) 90% );
+    float: right;
+    margin: 30px 15px 0px 0px; 
+    border-radius: 7 px;
+    
+    display: flex;
+
 }
 
 .user-comment1{

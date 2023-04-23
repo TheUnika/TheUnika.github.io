@@ -1,5 +1,5 @@
 window.onscroll=function(){
-  if (window.pageYOffset>3000){
+  if (window.pageYOffset>6000){
     batonchik.classList.add('shown');
   }else{
     batonchik.classList.remove('shown');

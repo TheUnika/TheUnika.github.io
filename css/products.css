@@ -1,5 +1,6 @@
 body{
     background-color: rgba(2, 91, 107, 0.726);
+    background-image: linear-gradient( rgb(0, 255, 115),rgb(0, 208, 255) 43%, rgb(0, 76, 255) 75%);
 }
 .productContainer {
     width: 1024px;

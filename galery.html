@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>
+      Цветы и животные
+   </title>
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <link rel="stylesheet" type="text/css" href="css/galery.css">
+   <link rel="icon" type="x-icon" href="images/logo1.jpg">
+   <meta name="viewport" content="width=device-width">
+   
+</head>
+
+<body>
+   <img class="headerImg" width="100%" src="http://ic.pics.livejournal.com/davydov_index/60378694/1830248/1830248_original.jpg" onclick="playAudio('media/звуки природы.mp3')" >
+   
+   <audio controls autoplay = "autoplay">
+      <source src="media/звуки природы.mp3" tupe="audio/mpeg">
+      <source src="media/Релакс.mp3">
+   </audio>
+     
+   <header>
+      <ul>
+         <li>
+            <table>
+               <tr>
+                  <td>
+                     <img src="images/logo1.jpg" onclick="playAudio('media/звуки природы.mp3')">
+                  </td>
+                  <td>
+                     <p> ПРИРОДА!</p>
+                  </td>
+               </tr>
+
+
+            </table>
+         </li>
+         <li class="button">
+            <table>
+               <tr>
+                  <td style="padding-top: 30px ;">
+                     <a href="index.html">
+                        <p>БЛОГ</p>
+                     </a>
+                  </td>
+               </tr>
+
+
+            </table>
+         </li>
+         <li class="button">
+            <table>
+               <tr>
+                  <td style="padding-top: 30px ;">
+                     <a href="products.html">
+                        <p> ТОВАРЫ </p>
+                     </a>
+                  </td>
+               </tr>
+
+
+            </table>
+         </li>
+         <li class="button disadled">
+            <table>
+               <tr>
+                  <td style="padding-top: 30px ;">
+                     <a href="galery.html">
+                        <p> ГАЛЕРЕЯ</p>
+                     </a>
+                  </td>
+               </tr>
+
+
+            </table>
+         </li>
+
+
+      </ul>
+      <button class="themebutton">
+         <img width="30px" src="images/moon.png">
+         <p> Сменить тему </p>
+      </button>
+      <button class="settings"> Настройка </button>
+      <br style="clear:both ;">
+   </header>
+  <!---- <div class="controls">
+   <label>
+      Цвет текста:
+      <select class="filter">
+         <option value="inherit" selected> По умолчанию</option>
+         <option value="white">Белый</option>
+         <option value="red">Красный</option>
+         <option value="green">Зелёный</option>
+         <option value="pink">Розовый</option>
+         <option value="blue">Голубой</option>
+         <option value="yellow">Жёлтый</option>
+         <option value="purple">Фиолетовый</option>
+      </select>
+   </label>
+   <label>
+      Размер текста:<output class="pixels">14</output>px
+      <input class="size-setting" type="range" min="8" max="70" step="1" value="14">
+   </label>
+</div>-->
+<div class="galery">
+    <div class="galery-small">
+    <img src="images/galery/бэмби.jpg" >
+    <img src="images/galery/лотос.jpg">
+    <img src="images/galery/природа.jpg">
+    <img src="images/galery/птица.jpeg"onclick="myImage(this)">
+    <img src="images/galery/редкий цветок.jpg"onclick="myImage(this)">
+    <img src="images/galery/цветы.jpg"onclick="myImage(this)">
+    <img src="images/galery/озеро.jpg"onclick="myImage(this)">
+    <img src="images/galery/собака.jpg"onclick="myImage(this)">
+    <img src="images/galery/маки.jpg"onclick="myImage(this)">
+    <img src="images/galery/кролик.jpg"onclick="myImage(this)">
+    <img src="images/galery/клубника.jpg"onclick="myImage(this)">
+    <img src="images/galery/лиса.jpg"onclick="myImage(this)">
+    <img src="images/galery/водопад.jpg"onclick="myImage(this)">
+    <img src="images/galery/бабочка.jpg"onclick="myImage(this)">
+</div>
+</div>
+<div class="imagecont">
+   <img id="img-Box" src="images/galery/бэмби.jpg">
+
+</div>
+
+
+   
+<button class="up-button">
+   <img width="60px" src="https://gvarta.com/upload/up-arrow.svg">
+</button>
+   <div class="footer">
+      <div>
+         <div class="info">
+            <img src="https://i.pinimg.com/736x/df/1f/86/df1f86cc1471c2053b3f246f96b967a1--free-logo-vectors.jpg">
+
+            <a target="_blank" href="https://vk.com/?I">
+               <h2>Вконтакте</h2>
+            </a>
+         </div>
+      </div>
+
+      <div>
+         <div class="info">
+            <img src="https://static.tildacdn.com/tild3665-3932-4664-a366-326633326337/telegram.png">
+
+            <a target="_blank" href="https://web.telegram.org/z/">
+               <h2>Телеграмм</h2>
+            </a>
+         </div>
+      </div>
+
+      <div>
+         <div class="info">
+            <img src="https://static10.tgstat.ru/channels/_0/2f/2f5a6b6c6296b1cfa5773ca9500ed2c8.jpg">
+
+            <a target="_blank" href="https://www.viber.com/ru/">
+               <h2>Вайбер</h2>
+            </a>
+         </div>
+      </div>
+   </div>
+
+</body>
+
+<script src="js/themes.js">
+</script>
+<script src="js/Likes.js"></script>
+<script src="js/comment.js" ></script>
+<script src="js/scrol.js"></script>
+<script src="js/read-mode.js"></script>
+<script src="js/galery.js"> </script>
+
+
+</html>

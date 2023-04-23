@@ -15,3 +15,7 @@ commentForm.onsubmit = function (evt) {
     newComment.textContent = commentFeld.value ;
     commentList.append (newComment);
 }
+let vk_widget = document.createElement("div")
+vk_widget.id = "vk_comments_"+i.toString()
+let vk_script = document.createElement("script")
+vk_script.textContent = "VK.Widgets.Comments(\"vk_comments"+i.toString()+ "\", {limit: 10, attach: "*"});"
